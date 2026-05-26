@@ -1,3 +1,0 @@
-const toggle=document.querySelector(".nav-toggle");const nav=document.querySelector(".nav");if(toggle&&nav){toggle.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");toggle.setAttribute("aria-expanded",open?"true":"false")})}
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const id=a.getAttribute("href");const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth",block:"start"});nav?.classList.remove("is-open")}}));
-const form=document.querySelector(".contact-form");if(form){form.addEventListener("submit",e=>{e.preventDefault();alert("Formulář je zatím designová verze. Make webhook připojíme později v atributu action.");})}
