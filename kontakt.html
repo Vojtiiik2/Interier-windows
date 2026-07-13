@@ -1,1 +1,233 @@
-<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Kontakt – Interier Windows"><title>Kontakt | Interier Windows</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="index.html"><img class="logo" src="assets/img/logo/interier-windows-logo-transparent.png" alt="Interier Windows"></a><button class="hamb" aria-label="Menu">☰</button><nav class="menu"><a href="index.html">Úvod</a><a href="sluzby.html">Řešení</a><a href="realizace.html">Realizace</a><a href="architekti.html">Architekti</a><a class="active" href="kontakt.html">Kontakt</a></nav><a class="showroom" href="kontakt.html#showroom">Showroom Praha</a></div></header><main><section class="hero page" style="--hero:url('assets/img/hero/nahled-3.webp')"><div class="wrap"><div class="crumb">Úvod › Kontakt</div><h1>Kontakt</h1><div class="line"></div><p>Pošlete nám poptávku, fotografie oken nebo si domluvte návštěvu showroomu.</p></div></section><section class="section"><div class="wrap form-wrap"><div><div class="eyebrow">Poptávka</div><h2>Popište nám, co řešíte</h2><p class="lead">Čím přesnější informace pošlete, tím rychleji půjde připravit první směr a orientační cenu.</p><div class="contact-box" id="showroom"><h3>Showroom Praha</h3><p>Materiály, látky a technické systémy si můžete prohlédnout osobně.</p><p><strong>Telefon:</strong> +420 123 456 789<br><strong>E-mail:</strong> info@interier-windows.cz</p><p><strong>Adresa:</strong> doplnit finální adresu showroomu</p></div></div><form class="form" data-demo><div class="two"><input required placeholder="Jméno"><input required type="email" placeholder="E-mail"></div><div class="two"><input placeholder="Telefon"><select><option>Typ projektu</option><option>Byt / dům</option><option>Komerční prostor</option><option>Spolupráce s architektem</option></select></div><textarea placeholder="Co potřebujete vyřešit? Počet oken, místnost, typ stínění, přibližné rozměry..."></textarea><input type="file" multiple><button class="btn dark" type="submit">Odeslat poptávku →</button><p style="font-size:13px;color:#777;margin:0">Poznámka: formulář je zatím připravený pro pozdější napojení na Make webhook.</p></form></div></section></main><footer class="footer"><div class="wrap footer-grid"><div><strong>INTERIER WINDOWS</strong><p>Stínění, textil a technické systémy pro interiéry. <br><a href="https://motturacz.cz" target="_blank" rel="noopener">Partner Mottura CZ</a></p></div><div><strong>Telefon</strong><p>+420 123 456 789</p></div><div><strong>E-mail</strong><p>info@interier-windows.cz</p></div><div><strong>Showroom</strong><p>Praha</p></div></div></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kontakt – Interier Windows">
+  <title>Kontakt | Interier Windows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img
+          class="logo"
+          src="assets/img/logo/interier-windows-logo-transparent.png"
+          alt="Interier Windows"
+        >
+      </a>
+
+      <button class="hamb" type="button" aria-label="Otevřít menu">
+        ☰
+      </button>
+
+      <nav class="menu">
+        <a href="index.html">Úvod</a>
+        <a href="sluzby.html">Řešení</a>
+        <a href="realizace.html">Realizace</a>
+        <a href="architekti.html">Architekti</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <a class="showroom" href="kontakt.html#showroom">
+        Showroom Praha
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section
+      class="hero page"
+      style="--hero: url('assets/img/hero/nahled-3.webp')"
+    >
+      <div class="wrap">
+        <div class="crumb">Úvod › Kontakt</div>
+        <h1>Kontakt</h1>
+        <div class="line"></div>
+        <p>
+          Pošlete nám poptávku, fotografie oken nebo si domluvte
+          návštěvu showroomu.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap form-wrap">
+        <div>
+          <div class="eyebrow">Poptávka</div>
+          <h2>Popište nám, co řešíte</h2>
+
+          <p class="lead">
+            Čím přesnější informace pošlete, tím rychleji půjde
+            připravit první návrh řešení a orientační cenu.
+          </p>
+
+          <div class="contact-box" id="showroom">
+            <h3>Showroom Praha</h3>
+
+            <p>
+              Materiály, látky a technické systémy si můžete
+              prohlédnout osobně.
+            </p>
+
+            <p>
+              <strong>Telefon:</strong>
+              +420 123 456 789
+              <br>
+              <strong>E-mail:</strong>
+              info@interier-windows.cz
+            </p>
+
+            <p>
+              <strong>Adresa:</strong>
+              doplnit finální adresu showroomu
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="form"
+          data-contact-form
+          enctype="multipart/form-data"
+          novalidate
+        >
+          <div class="two">
+            <div>
+              <label for="contact-name">Jméno a příjmení</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Jméno a příjmení"
+                minlength="2"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="contact-email">E-mail</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="E-mail"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="two">
+            <div>
+              <label for="contact-phone">Telefon</label>
+              <input
+                id="contact-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="Telefon"
+                minlength="6"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="contact-project-type">Typ projektu</label>
+              <select
+                id="contact-project-type"
+                name="projectType"
+                required
+              >
+                <option value="" selected disabled>
+                  Vyberte typ projektu
+                </option>
+                <option value="Byt / dům">Byt / dům</option>
+                <option value="Komerční prostor">Komerční prostor</option>
+                <option value="Spolupráce s architektem">
+                  Spolupráce s architektem
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="contact-message">Popis poptávky</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="Co potřebujete vyřešit? Uveďte počet oken, místnost, typ stínění a přibližné rozměry."
+              minlength="5"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="contact-photos">
+              Fotografie oken
+            </label>
+            <input
+              id="contact-photos"
+              name="photos"
+              type="file"
+              accept="image/jpeg,image/png,image/webp,application/pdf"
+              multiple
+            >
+            <p class="form-note">
+              Můžete přiložit nejvýše 5 souborů.
+            </p>
+          </div>
+
+          <button class="btn dark" type="submit">
+            Odeslat poptávku →
+          </button>
+
+          <p
+            class="form-status"
+            data-form-status
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>INTERIER WINDOWS</strong>
+        <p>
+          Stínění, textil a technické systémy pro interiéry.
+          <br>
+          <a
+            href="https://vojtiiik2.github.io/Mottura-Czech-Republic/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Partner Mottura Czech Republic
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <strong>Telefon</strong>
+        <p>+420 123 456 789</p>
+      </div>
+
+      <div>
+        <strong>E-mail</strong>
+        <p>info@interier-windows.cz</p>
+      </div>
+
+      <div>
+        <strong>Showroom</strong>
+        <p>Praha</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
